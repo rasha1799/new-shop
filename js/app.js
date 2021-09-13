@@ -85,15 +85,3 @@ loadProducts();
 
 
 
-const starTotal = 5;
-
-for (const rating in data[0]) {
-  // 2
-  const starPercentage = (rating.rate / starTotal) * 100;
-  // 3
-  const starPercentageRounded = `${(Math.round(starPercentage / 10) * 10)}%`;
-  // 4
-  document.getElementById('stars-inner').style.width = starPercentageRounded;
-}
-
-
